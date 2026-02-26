@@ -40,7 +40,7 @@ termux_step_pre_configure() {
 # (some packages do not accept '--rpath' or '--rpath-hack' configure arguments)
 # Error: Unknown option --rpath-hack
 termux_step_configure() {
-    cd "$TERMUX_PKG_SRCDIR" && autoreconf -fiv && cd -
+	cd "$TERMUX_PKG_SRCDIR" && autoreconf -fiv && cd -
 	"$TERMUX_PKG_SRCDIR"/configure \
 		--prefix="$TERMUX_PREFIX" \
 		--libexecdir="$TERMUX_PREFIX/libexec" \
