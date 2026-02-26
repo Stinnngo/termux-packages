@@ -48,6 +48,7 @@ termux_step_configure() {
 		--includedir="$TERMUX__PREFIX__INCLUDE_DIR" \
 		--sbindir="$TERMUX_PREFIX/bin" \
 		--disable-static \
+		--host=$TERMUX_HOST_PLATFORM
 		$TERMUX_PKG_EXTRA_CONFIGURE_ARGS
 }
 
